@@ -36,9 +36,12 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 2, y: 0 }}
       >
-        <strong>Hello! I'm Franco Avolio </strong>, a passionate
-        <strong style={{ marginLeft: "4px" }}>Full Stack Developer </strong> with a strong background in
-        building robust and scalable web applications.
+        <strong>Hello! Im Franco Avolio </strong>, a passionate
+        <strong style={{ marginLeft: "4px" }}>
+          Full Stack Developer{" "}
+        </strong>{" "}
+        with a strong background in building robust and scalable web
+        applications.
       </motion.h1>
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
