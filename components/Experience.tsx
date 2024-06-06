@@ -38,7 +38,6 @@ export default function Experience() {
               date={experience.date}
               icon={experience.icon}
             >
-              {/* Modify the h3 tag to be a link */}
               <h3
                 className="font-semibold capitalize"
                 style={{ display: "inline-flex", alignItems: "center" }}
