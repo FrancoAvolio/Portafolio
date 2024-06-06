@@ -36,7 +36,7 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 2, y: 0 }}
       >
-        <strong>Hello! I'm Franco Avolio </strong>, a passionate{" "}
+        <strong>Hello! I'm Franco Avolio </strong>, a passionate
         <strong>Full Stack Developer </strong> with a strong background in
         building robust and scalable web applications.
       </motion.h1>
@@ -50,7 +50,7 @@ export default function Intro() {
           href="#contact"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition-all"
         >
-          Contact me{" "}
+          Contact me
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
         <a
@@ -58,7 +58,7 @@ export default function Intro() {
           href="/CV.pdf"
           download={true}
         >
-          Download CV{" "}
+          Download CV
           <HiDownload className="opacity-60 group-hover:translate-x-1" />
         </a>
         <a

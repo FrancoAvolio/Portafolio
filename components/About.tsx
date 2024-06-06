@@ -14,30 +14,27 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        Skilled in{" "}
+        Skilled in
         <strong>React, TypeScript, Tailwind CSS, and Next.js </strong>, I bring
-        expertise in developing, maintaining, and managing{" "}
+        expertise in developing, maintaining, and managing
         <strong>
-          RESTful APIs using Node.js, Next.js, or FastAPI (Python){" "}
+          RESTful APIs using Node.js, Next.js, or FastAPI (Python)
         </strong>
         . Experienced in container management with <strong>Docker</strong>, and
         implementing security measures such as authentication and authorization
         using <strong>Next-Auth, OAuth, Clerk, and JWT</strong>. Adept at team
         collaboration with <strong>GIT</strong> for project versioning and
-        capable of developing relational databases with{" "}
-        <strong>MySQL or PostgreSQL</strong> and non-relational databases with{" "}
-        <strong>MongoDB</strong>. Proficient in using <strong>ORMs</strong> like{" "}
+        capable of developing relational databases with
+        <strong>MySQL or PostgreSQL</strong> and non-relational databases with
+        <strong>MongoDB</strong>. Proficient in using <strong>ORMs</strong> like
         <strong>Prisma </strong> for <strong>PostgreSQL</strong> database
-        creation. Additionally, I have experience with <strong>AWS</strong>{" "}
+        creation. Additionally, I have experience with <strong>AWS</strong>
         services and <strong>Docker</strong> for containerization.
-      </p>{" "}
+      </p>
       <p>
-        {" "}
-        I studied{" "}
-        <strong>
-          Full-Stack programming at Coderhouse from 2022 to 2024
-        </strong>{" "}
-        and am currently pursuing a{" "}
+        I studied
+        <strong>Full-Stack programming at Coderhouse from 2022 to 2024</strong>
+        and am currently pursuing a
         <strong>
           Common Basic Cycle in Computer Engineering at the University of Buenos
           Aires

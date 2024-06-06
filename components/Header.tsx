@@ -14,7 +14,7 @@ const Header = () => {
     linkRefs.current = links.map(
       (_, index) => linkRefs.current[index] || React.createRef()
     );
-  }, [links]);
+  }, []);
 
   const handleScroll = () => {
     const scrollPosition = window.scrollY + 200;
