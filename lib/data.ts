@@ -3,6 +3,10 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import etiquetalo from "@/public/etiquetalo.png";
+import nehros from "@/public/nehros.png";
+import lokahi from "@/public/lokahi.png";
+import carhub from "@/public/carhub.png";
+import dalle from "@/public/dalle.png";
 
 export const links = [
   {
@@ -77,43 +81,43 @@ export const projectsData = [
   {
     title: "Lokahi",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+      "A web page for Australian clients created for a digital agency. It was my most challenging project as I completed it in just 8 hours.",
     tags: ["HTML", "Tailwind", "JavaScript", "Docker"],
-    imageUrl: etiquetalo,
-    deployUrl: "https://etiquetalo.com.ar",
+    imageUrl: lokahi,
+    deployUrl: "https://francoavolio.github.io/Lokahi/",
   },
   {
     title: "Nehros",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+      "A web page for a digital agency where I am the Co-Founder and Full Stack Developer.",
     tags: ["React", "Next.js", "Tailwind", "Framer", "TypeScript"],
-    imageUrl: etiquetalo,
-    deployUrl: "https://etiquetalo.com.ar",
+    imageUrl: nehros,
+    deployUrl: "https://www.nehros.com/",
   },
   {
     title: "CarHub",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+      "A car dealership website where you can filter by your favorite brand and see the rental prices for cars.",
     tags: ["React", "Next.js", "Tailwind", "TypeScript"],
-    imageUrl: etiquetalo,
-    deployUrl: "https://etiquetalo.com.ar",
+    imageUrl: carhub,
+    deployUrl: "https://car-mcaxhejwh-francoavolio.vercel.app/",
   },
   {
     title: "Dall-E",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+      "A web app, currently not live, that serves as a SaaS platform where, using a prompt, DALL-E generates the image you request. DALL-E is made by OpenAI.",
     tags: [
       "React",
       "Node.js",
       "Tailwind",
       "TypeScript",
-      "MongoDb",
+      "MongoDB",
       "Axios",
       "Cloudinary",
       "Express",
     ],
-    imageUrl: etiquetalo,
-    deployUrl: "https://etiquetalo.com.ar",
+    imageUrl: dalle,
+    deployUrl: "https://github.com/FrancoAvolio/Dall-E-Clone",
   },
 ] as const;
 
