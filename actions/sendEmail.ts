@@ -12,6 +12,8 @@ export const sendEmail = async (formData: FormData) => {
   if (!email || !message) {
     throw Error("Missing required fields");
   }
+
+
   try {
     await resend.emails.send({
       from: "Portfolio website <onboarding@resend.dev>",

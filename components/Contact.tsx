@@ -1,11 +1,36 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import SectionHeading from "./Section";
 import { motion } from "framer-motion";
 import { sendEmail } from "@/actions/sendEmail";
 import Submit from "./Submit";
 
 export default function Contact() {
+  const [statusMessage, setStatusMessage] = useState("");
+  const [statusColor, setStatusColor] = useState("");
+  const [isPending, setIsPending] = useState(false);
+
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setIsPending(true);
+    const formData = new FormData(event.target as HTMLFormElement);
+    try {
+      await sendEmail(formData);
+      setStatusMessage("Mensaje enviado exitosamente.");
+      setStatusColor("text-green-500");
+      (event.target as HTMLFormElement).reset();
+    } catch (error) {
+      setStatusMessage("No se pudo enviar el mensaje. Inténtalo de nuevo.");
+      setStatusColor("text-red-500");
+    } finally {
+      setIsPending(false);
+      setTimeout(() => {
+        setStatusMessage("");
+        setStatusColor("");
+      }, 3000);
+    }
+  };
+
   return (
     <motion.section
       id="contact"
@@ -24,12 +49,7 @@ export default function Contact() {
         or through this form.
       </p>
 
-      <form
-        className="mt-10 flex flex-col"
-        action={async (formData) => {
-          await sendEmail(formData);
-        }}
-      >
+      <form className="mt-10 flex flex-col" onSubmit={handleSubmit}>
         <input
           className="h-14 rounded-lg border border-black/10 px-4"
           type="email"
@@ -46,8 +66,12 @@ export default function Contact() {
           required
           maxLength={800}
         />
-        <Submit />
+        <Submit isPending={isPending} />
       </form>
+
+      {statusMessage && (
+        <p className={`mt-4 ${statusColor}`}>{statusMessage}</p>
+      )}
     </motion.section>
   );
 }
