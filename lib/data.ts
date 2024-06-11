@@ -58,7 +58,7 @@ export const experiencesData = [
     description:
       "I'm now a Co-Founder & Full stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma, MongoDB and more.",
     icon: React.createElement(FaReact),
-    date: "2024 - present",
+    date: "2023 - present",
   },
   {
     title: "UBA (University of Buenos Aires) - Systems Engineering",

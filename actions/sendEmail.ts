@@ -6,13 +6,12 @@ import ContactFormEmail from "@/email/ContactForm";
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export const sendEmail = async (formData: FormData) => {
-  const email = formData.get("email")?.toString();
-  const message = formData.get("message")?.toString();
+  const email = formData.get("email")?.toString().trim();
+  const message = formData.get("message")?.toString().trim();
 
   if (!email || !message) {
     throw Error("Missing required fields");
   }
-
 
   try {
     await resend.emails.send({
@@ -26,6 +25,6 @@ export const sendEmail = async (formData: FormData) => {
       }),
     });
   } catch (error) {
-    throw error;
+    throw new Error("Failed to send email. Please try again.");
   }
 };

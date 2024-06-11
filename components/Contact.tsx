@@ -20,7 +20,9 @@ export default function Contact() {
       setStatusColor("text-green-500");
       (event.target as HTMLFormElement).reset();
     } catch (error) {
-      setStatusMessage("No se pudo enviar el mensaje. Inténtalo de nuevo.");
+      setStatusMessage(
+        "No se pudo enviar el mensaje. Intenta de nuevo rellenando los campos."
+      );
       setStatusColor("text-red-500");
     } finally {
       setIsPending(false);
