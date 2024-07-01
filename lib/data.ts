@@ -65,7 +65,7 @@ export const experiencesData = [
     location: "Buenos Aires, Argentina",
     description: "Currently studying Systems Engineering at UBA",
     icon: React.createElement(LuGraduationCap),
-    date: "2024 - 2030",
+    date: "2024 - 2029",
   },
 ] as const;
 
