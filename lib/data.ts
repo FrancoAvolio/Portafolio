@@ -76,7 +76,7 @@ export const projectsData = [
       "I worked as a Front End developer on this website. Developed with React.js and Vite, this application advertises the client's product. It includes a form powered by Email.js that connects potential clients with interested parties through an action call.",
     tags: ["React", "Vite", "Email.js", "Tailwind", "Material UI"],
     imageUrl: etiquetalo,
-    deployUrl: "https://etiquetalo.com.ar",
+    deployUrl: "https://website-etiquetalo.vercel.app/",
   },
   {
     title: "Lokahi",
